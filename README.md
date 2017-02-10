@@ -4,15 +4,15 @@
 
 Install the shell script providing a URI to a host specific parameter file
 
-`sudo ./mgisInstaller.sh install http://localhost:80/hostSpecificOParameterFile.ini`
+`sudo ./bashInstaller.sh install http://webserver/hostSpecificOParameterFile.ini`
 
 ## Start the installation
 
-`sudo ./mgisInstaller.sh start`
+`sudo ./bashInstaller.sh start`
 
 ## Remove
 
-`sudo ./mgisInstaller.sh deinstall`
+`sudo ./bashInstaller.sh deinstall`
 
 
 ## SCRIPT: bashInstaller.sh
@@ -41,7 +41,7 @@ The INI_FILE should have multiple sections of the following format
  e.g.
 
      [sw1]
-     zipFile=http://localhost/sw1.zip
+     zipFile=http://webserver/sw1.zip
      scriptFile=sw1/bin/configure_sw1.sh
      iniFile=
 
